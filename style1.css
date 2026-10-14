@@ -1,0 +1,141 @@
+body {
+    font-family: Kaushan Script;
+    background: linear-gradient(to left,#FF5A5A,#FF8B5A,#FFA95A,#FFD45A);
+
+    /* FIX */
+    margin: 0;
+}
+
+/* 1. Đặt kích thước cố định cho logo thay vì dùng 20% */
+.logo-edit img {
+    width: 80px; /* Thay đổi kích thước tùy ý (ví dụ: 60px - 100px) */
+    height: auto;
+}
+
+/* 2. Xóa margin mặc định của h1 và tạo khoảng cách giữa logo với chữ */
+.logo-edit h1 {
+    margin: 0;
+    margin-left: 15px; /* Khoảng cách ngang giữa logo và chữ */
+}
+
+/* 3. Thu gọn khoảng cách trên/dưới của khu vực header */
+header {
+    padding: 15px 0 10px 0; /* Padding trên và dưới gọn lại */
+}
+
+.logo-edit {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav {
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.menu {
+    background-color: #CB9DF0;
+    border: 2px solid purple;
+    border-radius: 30px;
+}
+
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+
+a:hover {
+    background-color: #8C56D4;
+    border-radius: 20px;
+
+    /* Optional: hover → bigger */
+    transform: scale(1.1);
+}
+
+
+.collection-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.model1 {
+    display: grid;
+
+    /* FIX */
+    grid-template-columns: repeat(3, minmax(0, 260px));
+
+    justify-content: center;
+
+    /* FIX */
+    gap: 20px;
+
+    /* FIX */
+    max-width: 100%;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1px;
+
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 5%;
+
+    /* FIX */
+    box-sizing: border-box;
+
+
+}
+
+
+.product img {
+    /* FIX */
+    width: 100%;
+    max-width: 100%;
+
+    height: 280px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+    margin: 0;
+}
+
+.product:hover{
+transform: 
+  scale(1.05);
+ box-shadow: 0 0 10px 10px white,
+ 0 0 10px 10px lightblue;
+}
+footer{
+  text-align: center;
+}
+
+h1 {
+   font-size: 60px; 
+}
+.about,
+.why-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+

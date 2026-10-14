@@ -1,0 +1,116 @@
+body {
+  margin:0;
+  font-family: Kaushan Script;
+  background:linear-gradient(to left,#FF5A5A,#FF8B5A,#FFA95A,#FFD45A) ;
+}
+
+.logo-edit img {
+  width: 80px;
+}
+
+.logo-edit {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  font-size:25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.menu {
+  background-color: #CB9DF0;
+  border: 2px solid purple ;
+  border-radius: 30px ;
+}
+
+.product {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color:black;
+}
+
+a:hover {
+  background-color:#8C56D4;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* --- CĂN GIỮA HÌNH ẢNH VÀ CHỮ TRONG .TOUCH --- */
+.Touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Căn chữ ở giữa mỗi cột */
+  gap: 40px;          /* Tăng khoảng cách đều giữa Email, Ảnh và Location */
+}
+
+.Email, .Location {
+  flex: 1;            /* Cho 2 bên Email và Location chiếm kích thước đều nhau */
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Đặt kích thước ảnh ở giữa riêng để không bị đè CSS */
+.img img {
+  width: 500px;       /* Bạn có thể chỉnh to nhỏ ảnh ở đây */
+  height: auto;
+}
+
+.Get {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Get img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+/* Hover: icon bên trái xoay */
+.Get .get-icon:hover {
+    transform: rotate(360deg);
+}
+
+/* Icon bên phải lật hướng và vẫn xoay khi hover */
+.Get .right-icon {
+    transform: scaleX(-1);
+}
+
+.Get .right-icon:hover {
+    transform: scaleX(-1) rotate(360deg);
+}
+h1 {
+   font-size: 60px; 
+}
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}

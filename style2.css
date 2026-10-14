@@ -3,6 +3,24 @@ body {
     font-family: Kaushan Script;
     background:linear-gradient(to left,#FF5A5A,#FF8B5A,#FFA95A,#FFD45A) ;
 }
+
+/* 1. Đặt kích thước cố định cho logo thay vì dùng 20% */
+.logo-edit img {
+    width: 80px; /* Thay đổi kích thước tùy ý (ví dụ: 60px - 100px) */
+    height: auto;
+}
+
+/* 2. Xóa margin mặc định của h1 và tạo khoảng cách giữa logo với chữ */
+.logo-edit h1 {
+    margin: 0;
+    margin-left: 15px; /* Khoảng cách ngang giữa logo và chữ */
+}
+
+/* 3. Thu gọn khoảng cách trên/dưới của khu vực header */
+header {
+    padding: 15px 0 10px 0; /* Padding trên và dưới gọn lại */
+}
+
 img{
     width:20%;
 }
